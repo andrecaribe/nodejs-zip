@@ -1,6 +1,6 @@
 {
   "name": "nodejs-zip",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "The simplest Zip for Node.js",
   "main": "nodejs-zip.js",
   "directories": {
