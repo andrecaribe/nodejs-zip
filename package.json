@@ -1,0 +1,28 @@
+{
+  "name": "nodejs-zip",
+  "version": "0.0.1",
+  "description": "The simplest Zip for Node.js",
+  "main": "nodejs-zip.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/andrecaribe/nodejs-zip.git"
+  },
+  "keywords": [
+    "nodejs",
+    "zip",
+    "unzip"
+  ],
+  "author": "André Caribé <decocaribe [at] gmail [dot] com>",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "gitHead": "4b5b4c5675a3307e9dc78fca4b0f045d9a16f3e4",
+  "bugs": {
+    "url": "https://github.com/andrecaribe/nodejs-zip/issues"
+  }
+}
