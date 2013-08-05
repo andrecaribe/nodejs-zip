@@ -4,20 +4,22 @@ var fs = require('fs'),
 module.exports = function() {
 
     var _file,
+        _fileList,
         _arguments,
         _callback;
 
     var zip = function() {
-        _arguments.unshift(_file);
+        var params = _arguments.concat(_fileList);
+            params.unshift(_file);
 
-        var command = spawn('zip', _arguments);
+        var command = spawn('zip', params);
 
         command.stdout.on('data', function(data) {
-            //console.log('stdout: ' + data);
+            // TODO: stdout
         });
 
         command.stderr.on('data', function(data) {
-            //console.log('stderr: ' + data);
+            // TODO: stderr
         });
 
         command.on('close', function(code) {
@@ -29,9 +31,12 @@ module.exports = function() {
         });
     }
 
-    this.compress = function(file, arguments, callback) {
+    this.compress = function(file, fileList, arguments, callback) {
+        // TODO: extract method fs.exists
+        // TODO: extract method fs.unlink
 
         _file = file;
+        _fileList = fileList
         _arguments = arguments;
         _callback = callback;
 
@@ -54,6 +59,8 @@ module.exports = function() {
     }
 
     this.extract = function() {
+        // TODO: implement unzip method
+
         throw new Error('Not implemented.');
     }
 };

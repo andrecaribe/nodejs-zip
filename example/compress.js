@@ -3,8 +3,9 @@ var http = require('http'),
 
 http.createServer(function (req, res) {
  
-    var file = 'compress-example.zip';
-    var arguments = [
+    var file = 'compress-example.zip',
+        arguments = ['-j'],
+        fileList = [
             'assets/image_1.jpg',
             'assets/image_2.jpg',
             'assets/image_3.jpg',
@@ -22,7 +23,7 @@ http.createServer(function (req, res) {
 
     var zip = new nodejszip();
 
-    zip.compress(file, arguments, function(err) {
+    zip.compress(file, fileList, arguments, function(err) {
         if (err) {
             throw err;
         }
