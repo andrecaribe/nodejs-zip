@@ -1,5 +1,5 @@
 var http = require('http'),
-    nodejszip = require('../nodejs-zip');
+    nodejszip = require('../lib/nodejs-zip');
 
 http.createServer(function (req, res) {
  

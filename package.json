@@ -1,10 +1,11 @@
 {
   "name": "nodejs-zip",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "The simplest Zip for Node.js",
-  "main": "nodejs-zip.js",
+  "main": "lib/nodejs-zip.js",
   "directories": {
-    "example": "example"
+    "example": "example",
+    "lib": "lib"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
