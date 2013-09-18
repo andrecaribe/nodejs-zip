@@ -17,7 +17,10 @@
   "keywords": [
     "nodejs",
     "zip",
-    "unzip"
+    "unzip",
+    "extract",
+    "compress",
+    "proxy"
   ],
   "author": "André Caribé <decocaribe [at] gmail [dot] com>",
   "license": "MIT",
